@@ -1,0 +1,162 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav-content">
+      <a href="/" class="logo gradient-text">Khasanbayev</a>
+      
+      <div class="nav-links" id="nav-links">
+        <a href="/" class={currentPath === '/' ? 'active' : ''}>Home</a>
+        <a href="/about" class={currentPath === '/about' ? 'active' : ''}>About</a>
+        <a href="/projects" class={currentPath === '/projects' ? 'active' : ''}>Projects</a>
+        <a href="/blog" class={currentPath === '/blog' ? 'active' : ''}>Blog</a>
+        <a href="/contact" class={currentPath === '/contact' ? 'active' : ''}>Contact</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const navLinks = document.getElementById('nav-links');
+
+  mobileMenuBtn?.addEventListener('click', () => {
+    navLinks?.classList.toggle('mobile-open');
+    mobileMenuBtn?.classList.toggle('open');
+  });
+</script>
+
+<style>
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(51, 65, 85, 0.3);
+    z-index: 1000;
+  }
+
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .logo:hover {
+    transform: scale(1.05);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #94A3B8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #3B82F6;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #3B82F6;
+    transition: width 0.3s ease;
+  }
+
+  .nav-links a:hover::after,
+  .nav-links a.active::after {
+    width: 100%;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  .mobile-menu-btn span {
+    width: 24px;
+    height: 2px;
+    background: #E2E8F0;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-menu-btn.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .mobile-menu-btn.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-btn.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  @media (max-width: 768px) {
+    .mobile-menu-btn {
+      display: flex;
+    }
+
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: rgba(15, 23, 42, 0.98);
+      backdrop-filter: blur(10px);
+      flex-direction: column;
+      padding: 24px;
+      gap: 24px;
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links.mobile-open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .nav-links a::after {
+      display: none;
+    }
+  }
+</style>

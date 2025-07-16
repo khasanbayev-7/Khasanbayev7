@@ -1,0 +1,383 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Contact - Khasanbayev" description="Get in touch with Khasanbayev for collaborations and opportunities">
+  <Navigation />
+  
+  <main>
+    <section class="contact-hero">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <h1>Let's <span class="gradient-text">Connect</span></h1>
+          <p class="hero-subtitle">
+            I'm always excited to collaborate on innovative projects and discuss new opportunities. Let's build something amazing together.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info fade-in-delay-1">
+            <h2>Get in Touch</h2>
+            <p>Whether you have a project in mind, want to discuss a collaboration, or just want to say hello, I'd love to hear from you.</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="L22 6L12 13L2 6" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Email</h3>
+                  <a href="mailto:khasanbayev.7@mail.ru">khasanbayev.7@mail.ru</a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16 8A6 6 0 0 1 6 8C6 10 6 12 6 12S6 10 6 8A6 6 0 0 1 16 8Z" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="12" cy="8" r="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 14L12 18L16 14" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Location</h3>
+                  <p>Available for remote work worldwide</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Response Time</h3>
+                  <p>Usually within 24 hours</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h3>Connect on Social</h3>
+              <div class="social-grid">
+                <a href="https://github.com/khasanbayev-7" target="_blank" rel="noopener" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 19C4 20.5 4 16.5 2 16M22 16C20 20 16 19 9 19" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/sobitxon-khasanbayev-128290373/" target="_blank" rel="noopener" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M16 8A6 6 0 0 1 6 18V8A6 6 0 0 1 16 8V18A6 6 0 0 1 6 8" stroke="currentColor" stroke-width="2"/>
+                    <path d="M8 12L12 16L16 12" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  LinkedIn
+                </a>
+                <a href="https://t.me/khasanbayev7" target="_blank" rel="noopener" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M9.999 17.314l-0.002-4.231 7.282-6.585-8.618 5.43-5.795-2.16c-0.544-0.202-0.539-0.675 0.114-0.898l15.672-5.644c0.618-0.224 1.012 0.15 0.83 0.989l-2.666 12.422c-0.183 0.839-0.667 1.042-1.355 0.649l-3.752-2.676-1.502 1.451c-0.177 0.169-0.325 0.312-0.642 0.312z" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  Telegram
+                </a>
+                <a href="https://instagram.com/khasanbayev.7" target="_blank" rel="noopener" class="social-link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z" stroke="currentColor" stroke-width="2"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container fade-in-delay-2">
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/xgvzwwov" method="POST">
+                <h2>Send a Message</h2>
+                
+                <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                Send Message
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M22 2L11 13" stroke="currentColor" stroke-width="2"/>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                </button>
+            </form>
+            </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<script>
+  const form = document.getElementById('contact-form');
+  
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Sending...';
+
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        submitBtn.innerHTML = 'Message Sent!';
+        submitBtn.style.background = 'linear-gradient(135deg, #10B981 0%, #059669 100%)';
+        form.reset();
+      } else {
+        submitBtn.innerHTML = '❌ Error sending';
+      }
+    })
+    .catch(() => {
+      submitBtn.innerHTML = '⚠️ Network error';
+    })
+    .finally(() => {
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+        submitBtn.style.background = '';
+      }, 2000);
+    });
+  });
+</script>
+
+
+<style>
+  .contact-hero {
+    padding: 120px 0 80px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    color: #94A3B8;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .contact-content {
+    padding: 0 0 80px;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #E2E8F0;
+  }
+
+  .contact-info > p {
+    color: #94A3B8;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+
+  .contact-methods {
+    margin-bottom: 48px;
+  }
+
+  .contact-method {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+    align-items: flex-start;
+  }
+
+  .method-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+  }
+
+  .contact-method h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #E2E8F0;
+  }
+
+  .contact-method a {
+    color: #3B82F6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-method a:hover {
+    color: #60A5FA;
+  }
+
+  .contact-method p {
+    color: #94A3B8;
+  }
+
+  .social-links h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #E2E8F0;
+  }
+
+  .social-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: rgba(51, 65, 85, 0.3);
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    border-radius: 8px;
+    color: #E2E8F0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .social-link:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.5);
+    transform: translateY(-2px);
+  }
+
+  .contact-form-container {
+    background: rgba(51, 65, 85, 0.3);
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    border-radius: 16px;
+    padding: 32px;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #E2E8F0;
+  }
+
+  .form-group {
+    margin-bottom: 24px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #E2E8F0;
+    font-weight: 500;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(71, 85, 105, 0.5);
+    border-radius: 8px;
+    color: #E2E8F0;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    resize: vertical;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #3B82F6;
+    background: rgba(30, 41, 59, 0.8);
+  }
+
+  .form-group textarea {
+    min-height: 120px;
+  }
+
+  @media (max-width: 768px) {
+    .contact-hero {
+      padding: 100px 0 60px;
+    }
+
+    .contact-content {
+      padding: 0 0 60px;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+
+    .social-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-form-container {
+      padding: 24px;
+    }
+  }
+</style>

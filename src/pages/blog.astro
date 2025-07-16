@@ -1,0 +1,368 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Blog - Khasanbayev" description="My coding journey, creative thoughts, and real dev life stories">
+  <Navigation />
+
+  <main>
+    <section class="blog-hero">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <h1>Khasanbayev's <span class="gradient-text">Dev Blog</span></h1>
+          <p class="hero-subtitle">
+            Real stories, code experiments, side project lessons, and thoughts from my desk.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-content">
+      <div class="container">
+        <div class="blog-grid">
+
+          <article class="blog-post featured fade-in-delay-1">
+            <div class="post-image">
+              <img src="https://i.pinimg.com/1200x/63/6a/56/636a56f7c86d3924c9a5f22d58c55f4e.jpg" alt="Building a Telegram bot at midnight" loading="lazy" />
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-badge">Featured</span>
+                <span class="post-date">July 10, 2025</span>
+                <span class="post-category">Side Projects</span>
+              </div>
+              <h2>Building a Telegram Bot at Midnight</h2>
+              <p>Coding until sunrise taught me more than just handling API calls: it’s about patience, unexpected bugs, and that extra coffee cup that keeps you going. From design ideas to deployment mishaps, every late-night session shapes better code and even better stories.</p>
+            </div>
+          </article>
+
+          <article class="blog-post fade-in-delay-2">
+            <div class="post-image">
+              <img src="https://i.pinimg.com/1200x/07/13/91/0713915e6cce7c06be08288ea62371fe.jpg" alt="My daily dev setup" loading="lazy" />
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date">July 5, 2025</span>
+                <span class="post-category">Workflow</span>
+              </div>
+              <h3>My Simple Daily Coding Setup</h3>
+              <p>Every morning starts with the same ritual: a fresh coffee, VSCode with my favorite extensions, and a playlist that keeps distractions away. These small, repeatable habits make it easier to dive into code, stay productive, and finish what I start.</p>
+            </div>
+          </article>
+
+          <article class="blog-post fade-in-delay-3">
+            <div class="post-image">
+              <img src="https://i.pinimg.com/736x/5d/c8/63/5dc8637e74fd17dea829ea06541c2b72.jpg" alt="Small wins" loading="lazy" />
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date">June 25, 2025</span>
+                <span class="post-category">Mindset</span>
+              </div>
+              <h3>Small Wins That Keep Me Motivated</h3>
+              <p>One bug fixed, one new feature launched, or even refactoring messy code — small wins matter. They turn big goals into daily progress and remind me that growth in coding (and life) is always about consistent steps, not giant leaps.</p>
+            </div>
+          </article>
+
+          <article class="blog-post fade-in-delay-1">
+            <div class="post-image">
+              <img src="https://i.pinimg.com/736x/7b/db/81/7bdb8129330201e611b551075d858e9c.jpg" alt="Weekend coding" loading="lazy" />
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date">June 18, 2025</span>
+                <span class="post-category">Lifestyle</span>
+              </div>
+              <h3>Why I Code Even on Weekends</h3>
+              <p>Coding on weekends isn’t just about work — it’s creative freedom. Side projects help me explore new tech, test crazy ideas, and keep the passion alive beyond deadlines and client tasks. It’s my way of keeping coding fun.</p>
+            </div>
+          </article>
+
+          <article class="blog-post fade-in-delay-2">
+            <div class="post-image">
+              <img src="https://i.pinimg.com/736x/93/83/59/938359e19ab1532ba2b52e8e3d4820e3.jpg" alt="Quick tips" loading="lazy" />
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date">June 10, 2025</span>
+                <span class="post-category">Tips & Tricks</span>
+              </div>
+              <h3>3 Quick Fixes I Use Every Day</h3>
+              <p>From fast CSS resets that fix broken layouts, to tiny JS helpers that save minutes daily, and a couple of CLI shortcuts I rely on — these small fixes keep my workflow smooth and help me avoid daily frustrations.</p>
+            </div>
+          </article>
+
+          <article class="blog-post fade-in-delay-3">
+            <div class="post-image">
+              <img src="https://i.pinimg.com/736x/cf/f5/e1/cff5e1cba8964bcaeaee87cf0eaecb59.jpg" alt="Why blogging" loading="lazy" />
+            </div>
+            <div class="post-content">
+              <div class="post-meta">
+                <span class="post-date">June 1, 2025</span>
+                <span class="post-category">Personal</span>
+              </div>
+              <h3>Why I Started Writing About Code</h3>
+              <p>Writing isn’t just about sharing tutorials. For me, it’s a way to document my journey, capture lessons learned, and maybe help someone facing the same problems. It turns mistakes into guides and keeps me thinking deeply about what I build.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+
+
+<style>
+  .blog-hero {
+    padding: 120px 0 80px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    color: #94A3B8;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .blog-content {
+    padding: 0 0 80px;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+
+  .blog-post {
+    background: rgba(51, 65, 85, 0.3);
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .blog-post:hover {
+    transform: translateY(-8px);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .blog-post.featured {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-color: rgba(59, 130, 246, 0.5);
+    background: rgba(59, 130, 246, 0.05);
+  }
+
+  .post-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .blog-post.featured .post-image {
+    height: 100%;
+  }
+
+  .post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .blog-post:hover .post-image img {
+    transform: scale(1.05);
+  }
+
+  .post-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .post-meta {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .post-badge {
+    background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .post-date,
+  .post-category {
+    font-size: 12px;
+    color: #94A3B8;
+    font-weight: 500;
+  }
+
+  .post-category {
+    background: rgba(59, 130, 246, 0.1);
+    color: #60A5FA;
+    padding: 4px 8px;
+    border-radius: 8px;
+  }
+
+  .blog-post h2,
+  .blog-post h3 {
+    color: #E2E8F0;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+
+  .blog-post h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .blog-post h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .blog-post p {
+    color: #94A3B8;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+
+  .read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #3B82F6;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+
+  .read-more:hover {
+    color: #60A5FA;
+    transform: translateX(2px);
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+    border-top: 1px solid rgba(71, 85, 105, 0.3);
+  }
+
+  .pagination-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: rgba(51, 65, 85, 0.3);
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    border-radius: 8px;
+    color: #E2E8F0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .pagination-btn:hover:not(.disabled) {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.5);
+  }
+
+  .pagination-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .pagination-numbers {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .page-number {
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #94A3B8;
+    font-weight: 500;
+  }
+
+  .page-number.active {
+    background: #3B82F6;
+    color: white;
+  }
+
+  .page-number:hover:not(.active) {
+    background: rgba(59, 130, 246, 0.1);
+    color: #60A5FA;
+  }
+
+  .page-dots {
+    color: #64748B;
+    padding: 0 4px;
+  }
+
+  @media (max-width: 768px) {
+    .blog-hero {
+      padding: 100px 0 60px;
+    }
+
+    .blog-content {
+      padding: 0 0 60px;
+    }
+
+    .blog-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .blog-post.featured {
+      grid-template-columns: 1fr;
+      grid-column: span 1;
+    }
+
+    .pagination {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .pagination-numbers {
+      order: -1;
+    }
+  }
+</style>

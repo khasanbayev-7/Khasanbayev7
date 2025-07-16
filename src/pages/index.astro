@@ -1,0 +1,344 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Khasanbayev - Technology Enthusiast & Creative Developer">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Khasanbayev</span>
+          </h1>
+          <p class="hero-subtitle fade-in-delay-1">
+            A passionate backend developer who loves building reliable, scalable, and efficient systems.
+            I enjoy working with modern technologies, writing clean code, and turning complex ideas into real projects.
+          </p>
+          <div class="hero-actions fade-in-delay-2">
+            <a href="/projects" class="btn-primary">
+              View My Work
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="/about" class="btn-secondary">Learn More About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card fade-in">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Fast & Modern</h3>
+            <p>Building high-performance applications with cutting-edge technologies and best practices.</p>
+          </div>
+          
+          <div class="feature-card fade-in-delay-1">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>AI & Innovation</h3>
+            <p>Exploring artificial intelligence and machine learning to create intelligent solutions.</p>
+          </div>
+          
+          <div class="feature-card fade-in-delay-2">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M21 16V8A2 2 0 0 0 19 6H5A2 2 0 0 0 3 8V16A2 2 0 0 0 5 18H19A2 2 0 0 0 21 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Responsive Design</h3>
+            <p>Creating beautiful interfaces that work seamlessly across all devices and platforms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Projects Preview -->
+    <section class="projects-preview">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Featured Projects</h2>
+          <p>Here are some of my recent works that showcase my skills and passion for development.</p>
+        </div>
+        
+        <div class="projects-grid">
+          <div class="project-card fade-in-delay-1">
+            <div class="project-image">
+              <img src="https://www.in2code.de/fileadmin/_processed_/0/b/csm_code_javascript_49d002a67e.webp" alt="E-commerce Platform" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3>EasyShop</h3>
+              <p>EasyShop – a simple, fast, and modern e-commerce project.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>Tortoise ORM</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card fade-in-delay-2">
+            <div class="project-image">
+              <img src="https://i.pinimg.com/1200x/56/67/93/5667936906181a6fbe0501b471e2b5bd.jpg" alt="AI Assistant" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3>Register Login ORM</h3>
+              <p>A simple terminal app with user registration, login, and ORM support.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>SQLAlchemy ORM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section-action fade-in-delay-3">
+          <a href="/projects" class="btn-primary">View All Projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .hero {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+  }
+
+  .hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    color: #94A3B8;
+    margin-bottom: 32px;
+    line-height: 1.5;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .features {
+    padding: 80px 0;
+    background: rgba(30, 41, 59, 0.3);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+  }
+
+  .feature-card {
+    background: rgba(51, 65, 85, 0.3);
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(59, 130, 246, 0.5);
+    background: rgba(59, 130, 246, 0.05);
+  }
+
+  .feature-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    color: white;
+  }
+
+  .feature-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #E2E8F0;
+  }
+
+  .feature-card p {
+    color: #94A3B8;
+    line-height: 1.6;
+  }
+
+  .projects-preview {
+    padding: 80px 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .section-header h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #E2E8F0;
+  }
+
+  .section-header p {
+    font-size: 18px;
+    color: #94A3B8;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+
+  .project-card {
+    background: rgba(51, 65, 85, 0.3);
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(59, 130, 246, 0.5);
+  }
+
+  .project-image {
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover .project-image img {
+    transform: scale(1.05);
+  }
+
+  .project-content {
+    padding: 24px;
+  }
+
+  .project-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #E2E8F0;
+  }
+
+  .project-content p {
+    color: #94A3B8;
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  .project-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .project-tags span {
+    background: rgba(59, 130, 246, 0.1);
+    color: #60A5FA;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .section-action {
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 100px 0 60px;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .features {
+      padding: 60px 0;
+    }
+
+    .projects-preview {
+      padding: 60px 0;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+      margin-bottom: 32px;
+    }
+
+    .section-header {
+      margin-bottom: 48px;
+    }
+  }
+</style>
