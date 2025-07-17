@@ -1,37 +1,39 @@
-📌 Khasanbayev7
-Welcome to Khasanbayev7 – my personal website built to share my journey, projects, and ideas.
+# 🌐 Khasanbayev7 Personal Website
 
-✨ About
-This site is a digital space where I:
+Welcome to the official repository for **Khasanbayev7** – my personal website and digital portfolio.  
+A modern, minimalistic site to showcase my projects, share my thoughts, and introduce who I am.
 
-Showcase my personal and professional projects
+---
 
-Write about coding, technology, and creativity
+## ✨ Features
 
-Share thoughts, tutorials, and useful resources
+- 📝 Personal blog & articles
+- 💼 Portfolio with selected projects
+- 🙋 About me section
+- 📫 Contact information & social links
+- 📱 Responsive and clean design
+- ⚡ Fast performance & SEO friendly
 
-🛠️ Tech Stack
-HTML / CSS / JavaScript
+---
 
-Possibly using frameworks or static site generators (e.g., Astro, React, or others)
+## ⚙️ Tech Stack
 
-🚀 Getting Started
-If you'd like to clone and run the project locally:
+| Layer         | Technology                |
+|---------------|---------------------------|
+| Framework     | Astro / React / Vanilla JS|
+| Styling       | CSS / Tailwind CSS        |
+| Hosting       | GitHub Pages / Vercel     |
+| Content       | Markdown / MDX            |
+| Tools         | VS Code, Git, npm         |
 
-bash
-Копировать
-Редактировать
+---
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+```bash
 git clone https://github.com/yourusername/Khasanbayev7.git
 cd Khasanbayev7
 npm install
 npm run dev
-📄 License
-This project is licensed under the MIT License.
-
-🙌 Contact
-Feel free to reach out!
-
-📧 Email: your.email@example.com
-
-🌐 Website: khasanbayev7.com
-
