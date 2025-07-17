@@ -33,7 +33,7 @@ A modern, minimalistic site to showcase my projects, share my thoughts, and intr
 To run the project locally:
 
 ```bash
-git clone https://github.com/yourusername/Khasanbayev7.git
+git clone https://github.com/khasanbayev-7/Khasanbayev7.git
 cd Khasanbayev7
 npm install
 npm run dev
